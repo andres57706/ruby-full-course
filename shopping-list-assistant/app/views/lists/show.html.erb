@@ -1,0 +1,16 @@
+<div class='small-container center-block padding'>
+  <div>
+    <h3 class='text-uppercase'><%= @list.name %></h3>
+  </div>
+  <div>
+    <p>Items: <%= @list.total_items %></p>
+    <div class='row'>
+      <p class='col-6 text-secondary'>Created at: <%= @list.created_at %></p>
+      <p class='col-6 text-secondary'>Updated at: <%= @list.updated_at %></p>
+    </div>
+  </div>
+  <div>
+    <%= link_to 'Remove', @list, method: :delete %>
+    <%= link_to 'Edit', edit_list_url %>
+  </div>
+</div>

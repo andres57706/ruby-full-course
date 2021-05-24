@@ -1,0 +1,20 @@
+<div class='card padding margin-top'>
+  <div class='row'>
+    <div class='col-8 text-uppercase'>
+      <h3><%= list.name %></h3>
+    </div>
+    <div class='col-4'>
+      <div class='btn btn-link'>
+        <%= link_to 'Details', list %>
+      </div>
+      <div class='btn btn-link'>
+        <%= link_to 'Edit', list %>
+      </div>
+      <div class='btn btn-link'>
+        <%= link_to 'Remove', list %>
+      </div>
+    </div>
+  </div>
+  <p >Items: <%= list.total_items %></p>
+  <p class='text-secondary'>Created at: <%= list.created_at %></p>
+</div>
